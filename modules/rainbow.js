@@ -78,8 +78,8 @@ var rainbow =
 
         toilet.stdout.on('data', function(output)
         {
-            // Replace regular spaces with a non breaking space so things look good in the webchat
-            rainbow.reply('say', from, to, String(output).replace(/ /g, ' '));
+            // Replace regular spaces with a BLACK BLOCK so things look good in the webchat
+            rainbow.reply('say', from, to, String(output).replace(/ /g, '01,01█'));
         });
     },
 
